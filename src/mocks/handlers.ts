@@ -1,27 +1,13 @@
-import {http, HttpResponse} from "msw";
+// API 요청을 가로챌 핸들러들을 정의하는 파일
+import { http, HttpResponse } from 'msw'  // 새로운 2.7.0 문법!
 
 export const handlers = [
-    http.get('/api/user', async () => {
-        return HttpResponse.json({
-            id: 1,
-            username: 'admin',
-            email: 'test@mail.com'
-        })
+    // 간단한 GET 요청 핸들러 예시
+    http.get('/api/users', () => {
+        // 가짜 데이터 응답
+        return HttpResponse.json([
+            { id: 1, name: '김철수' },
+            { id: 2, name: '이영희' },
+        ])
     }),
-
-    http.post('/api/login', async ({request}) => {
-        const {username, password} = await request.json();
-
-        if(username === 'admin' && password === 'password') {
-            return HttpResponse.json({
-                message: 'Login successful'
-            })
-        } else {
-            return HttpResponse.json({
-                message: 'Invalid username or password'
-            }, {
-                status: 401
-            })
-        }
-    })
 ]

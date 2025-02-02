@@ -15,16 +15,11 @@ function App() {
       <h1>Mock API width MSW</h1>
         {user ? (
             <div>
-                <h2>Welcome {user.username}</h2>
+                <h2>Welcome {user.name}</h2>
                 <p>Email: {user.email}</p>
-                <button onClick={handleLogout}>Logout</button>
             </div>
         ) : (
-            <form onSubmit={handleLogin}>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button type="submit">Login</button>
-            </form>
+            <p>Loading...</p>
         )}
     </>
   )
