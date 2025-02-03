@@ -1,0 +1,67 @@
+{
+  "orders": [
+    {
+      "id": "ORD-001",
+      "userId": 1,
+      "orderDate": "2024-02-01T14:30:00.000Z",
+      "status": "COMPLETED",
+      "items": [
+        {
+          "productId": "PROD-001",
+          "name": "맥북 프로 16인치",
+          "quantity": 1,
+          "price": 3600000,
+          "subTotal": 3600000
+        }
+      ],
+      "totalAmount": 3600000,
+      "shippingAddress": "서울시 강남구",
+      "paymentMethod": "CREDIT_CARD"
+    },
+    {
+      "id": "ORD-002",
+      "userId": 2,
+      "orderDate": "2024-02-02T15:45:00.000Z",
+      "status": "PROCESSING",
+      "items": [
+        {
+          "productId": "PROD-002",
+          "name": "아이패드 프로",
+          "quantity": 1,
+          "price": 1200000,
+          "subTotal": 1200000
+        },
+        {
+          "productId": "PROD-003",
+          "name": "애플펜슬",
+          "quantity": 1,
+          "price": 150000,
+          "subTotal": 150000
+        }
+      ],
+      "totalAmount": 1350000,
+      "shippingAddress": "서울시 서초구",
+      "paymentMethod": "NAVER_PAY"
+    },
+    {
+      "id": "ORD-003",
+      "userId": 1,
+      "orderDate": "2024-02-03T09:15:00.000Z",
+      "status": "PENDING",
+      "items": [
+        {
+          "productId": "PROD-004",
+          "name": "에어팟 프로",
+          "quantity": 2,
+          "price": 350000,
+          "subTotal": 700000
+        }
+      ],
+      "totalAmount": 700000,
+      "shippingAddress": "서울시 강남구",
+      "paymentMethod": "KAKAO_PAY"
+    }
+  ],
+  "orderStatus": ["PENDING", "PROCESSING", "COMPLETED", "CANCELLED"],
+  "paymentMethods": ["CREDIT_CARD", "NAVER_PAY", "KAKAO_PAY", "BANK_TRANSFER"]
+}

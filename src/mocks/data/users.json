@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "kim@example.com",
+      "name": "김철수",
+      "role": "USER",
+      "createdAt": "2024-01-15T09:00:00.000Z",
+      "profile": {
+        "avatar": "https://example.com/avatars/1.png",
+        "phoneNumber": "010-1234-5678",
+        "address": "서울시 강남구"
+      }
+    },
+    {
+      "id": 2,
+      "email": "lee@example.com",
+      "name": "이영희",
+      "role": "ADMIN",
+      "createdAt": "2024-01-16T10:30:00.000Z",
+      "profile": {
+        "avatar": "https://example.com/avatars/2.png",
+        "phoneNumber": "010-2345-6789",
+        "address": "서울시 서초구"
+      }
+    },
+    {
+      "id": 3,
+      "email": "park@example.com",
+      "name": "박지민",
+      "role": "USER",
+      "createdAt": "2024-01-17T11:20:00.000Z",
+      "profile": {
+        "avatar": "https://example.com/avatars/3.png",
+        "phoneNumber": "010-3456-7890",
+        "address": "서울시 송파구"
+      }
+    }
+  ]
+}
