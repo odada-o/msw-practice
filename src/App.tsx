@@ -1,5 +1,7 @@
-import UserList from "./components/UserList.tsx";
-import UserDetail from "./components/UserDetail.tsx";
+import UserList from "./components/user/UserList.tsx";
+import UserDetail from "./components/user/UserDetail.tsx";
+import RegisterForm from "./components/auth/RegisterForm.tsx";
+import LoginForm from "./components/auth/LoginForm.tsx";
 
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     return (
     <>
       <h1>Mock API width MSW</h1>
+        <RegisterForm />
+        <LoginForm />
         <UserList />
         <UserDetail />
     </>

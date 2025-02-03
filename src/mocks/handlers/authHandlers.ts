@@ -61,5 +61,5 @@ export const authHandlers = [
             user: userWithoutPassword,
             token: `fake-jwt-token-${user.id}`
         }, { status: 201 })
-    }
+    })
 ]
